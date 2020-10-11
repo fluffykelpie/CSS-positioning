@@ -10,21 +10,21 @@ main {
 .container {
     height: 75%;
     width: 75%;
-    background-color: burlywood;
+    background-color: rgb(255, 241, 224);
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
-    "a a . . b b"
-    ". . . . . ."
+    "a a a b b b"
     ". . e e . ."
-    ". . . . . ."
-    "c c . . d d";
+    "f . e e . g"
+    ". . e e . ."
+    "c c c d d d";
 }
 
 .box {
-    background: blue;
+    background: rgb(83, 83, 126);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,4 +48,12 @@ main {
 
 .box:nth-child(5){
     grid-area: e;
+}
+
+.box:nth-child(6){
+    grid-area: f;
+}
+
+.box:nth-child(7){
+    grid-area: g;
 }
