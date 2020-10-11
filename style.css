@@ -29,9 +29,9 @@ main {
   background-color: #fff1e0;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "a a a b b b" ". . e e . ." "f . e e . g" ". . e e . ." "c c c d d d";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "a a . . b" ". . e . b" "c . e . ." "c . . . d" ". . . . d" "f f f . g" "f f f . g";
 }
 
 .box {
