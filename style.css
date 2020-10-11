@@ -29,9 +29,9 @@ main {
   background-color: #fff1e0;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-areas: "a a a a a b" "e c c c c b" "e d d d d b" "e d d d d b" "f f f f f b" "g g g g g b";
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: "a a a a a a b" "c c c c c c b" "e h i i j j b" "e h i i j j b" "e d d d d d b" "e f f f f f b" "g g g g g g b";
 }
 
 .box {
@@ -67,6 +67,18 @@ main {
 
 .box:nth-child(7) {
   grid-area: g;
+}
+
+.box:nth-child(8) {
+  grid-area: h;
+}
+
+.box:nth-child(9) {
+  grid-area: i;
+}
+
+.box:nth-child(10) {
+  grid-area: j;
 }
 
 /*# sourceMappingURL=style.css.map */
