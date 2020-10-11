@@ -16,4 +16,49 @@ body {
   height: 100%;
 }
 
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 75%;
+  width: 75%;
+  background-color: burlywood;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "a a . . b b" ". . . . . ." ". . e e . ." ". . . . . ." "c c . . d d";
+}
+
+.box {
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:nth-child(1) {
+  grid-area: a;
+}
+
+.box:nth-child(2) {
+  grid-area: b;
+}
+
+.box:nth-child(3) {
+  grid-area: c;
+}
+
+.box:nth-child(4) {
+  grid-area: d;
+}
+
+.box:nth-child(5) {
+  grid-area: e;
+}
+
 /*# sourceMappingURL=style.css.map */
