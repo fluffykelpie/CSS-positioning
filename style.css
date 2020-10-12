@@ -29,7 +29,7 @@ main {
   background-color: #fff1e0;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   grid-template-areas: "a a a a a a b" "c c c c c c b" "e h i i j j b" "e h i i j j b" "e d d d d d b" "e f f f f f b" "g g g g g g b";
 }

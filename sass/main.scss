@@ -13,7 +13,7 @@ main {
     background-color: rgb(255, 241, 224);
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-template-areas: 
     "a a a a a a b"
